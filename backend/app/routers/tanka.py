@@ -8,7 +8,7 @@ router = APIRouter()
 
 @router.post("/tanka", response_model=tanka_models.Tanka)
 def create_tanka(tanka: tanka_models.TankaCreate, db: Session = Depends(get_db)):
-    db_tanka = tanka_models.Tanka(**tanka.dict())
+    db_tanka = tanka_models.Tanka(content=tanka.content, author=tanka.author)
     db.add(db_tanka)
     db.commit()
     db.refresh(db_tanka)

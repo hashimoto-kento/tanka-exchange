@@ -21,14 +21,15 @@ export default function Create() {
         body: JSON.stringify({ content: tanka, author }),
       })
       if (response.ok) {
-        setTanka('')
-        setAuthor('')
-        setIsSubmitted(true)
+        // 送信成功時にトップページへリダイレクト
+        router.push('/')
       } else {
         console.error('Failed to submit tanka')
+        alert('短歌の送信に失敗しました。もう一度お試しください。')
       }
     } catch (error) {
       console.error('Error:', error)
+      alert('エラーが発生しました。もう一度お試しください。')
     }
   }
 
