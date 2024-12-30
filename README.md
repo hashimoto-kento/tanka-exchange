@@ -34,3 +34,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 機能
+短歌作成機能
+- 5・7・5・7・7を基本として短歌を作成して送信
+- 作成した短歌はランダムで他ユーザーへ届けられる
+- 短歌を受け取ったユーザーは返歌を作成することが出来る
+- 短歌・返歌にはそれぞれいいねを付けられる
